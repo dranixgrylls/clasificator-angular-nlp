@@ -1,5 +1,7 @@
 # Clasificator · Spanish Unsupervised Machine Learning
 
+![alt text](https://i.imgur.com/yhu4WE7.jpg) 
+
 **Proyecto generado con [Angular CLI] versión 9.0.3 que trata sobre el análisis del lenguaje natural, clasificación de opiniones mediante aprendizaje no supervisado.**
 Project generated with [Angular CLI] version 9.0.3 that deals with the analysis of natural language, classification of opinions through unsupervised learning.
 
