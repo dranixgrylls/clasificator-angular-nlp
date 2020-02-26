@@ -1,0 +1,31 @@
+<div class="clasificator">
+  <div class="header">
+    <span>Clasificador de Lenguaje Natural</span>
+  </div>
+  <div class="body">
+    <div class="input-zone">
+      <input type="text" placeholder="Introduce un comentario" (change)="modelChanged($event.target.value)"
+        (keyup.enter)="analyze()" />
+      <img src="../assets/search.png" (click)="analyze()" />
+    </div>
+    <div class="result" *ngIf="result === true">
+      <span *ngIf="positives > negatives" class="positive-result">
+        ¡Gracias por ese comentario tan positivo!
+      </span>
+      <span *ngIf="positives < negatives" class="negative-result">
+        Creo que tu comentario no es de lo más apropiado.
+      </span>
+      <span *ngIf="positives === negatives" class="neutral-result">
+        Tu comentario no es relevante para mí
+      </span>
+    </div>
+    <div class="details" *ngIf="result === true">
+      <div class="positives">
+        <span>Coincidencia de palabras positivas: {{positives}}</span>
+      </div>
+      <div class="negatives">
+        <span>Coincidencia de palabras negativas: {{negatives}}</span>
+      </div>
+    </div>
+  </div>
+</div>
