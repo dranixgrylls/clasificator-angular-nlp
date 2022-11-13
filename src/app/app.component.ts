@@ -59,7 +59,7 @@ export class AppComponent {
   }
 
   analyze() {
-    if (this.positiveWords !== [] && this.negativeWords !== [] && this.stopWords !== []) {
+    if (this.positiveWords.length > 0 && this.negativeWords.length > 0 && this.stopWords.length > 0) {
       if (this.analyzer) {
         this.result = true;
         let aux = "";
